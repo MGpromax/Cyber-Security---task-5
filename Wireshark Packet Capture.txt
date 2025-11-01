@@ -1,0 +1,25 @@
+Wireshark Packet Capture
+
+Date/Time: 2025-11-01 22:13:18 IST
+Interface: Wi-Fi (en0)
+Capture Duration: ~1 minute
+Generated Traffic: browsed https://example.com; pinged 1.1.1.1 (4 packets)
+Capture File: /Users/manojgowda/Desktop/wireshark.pcapng
+
+Protocols Identified (at least 3)
+- DNS: Query/Response details
+- TCP: Handshake (SYN, SYN/ACK, ACK) frames
+- HTTP or TLS: Request or handshake notes (e.g., SNI)
+- (Optional) ICMP: Echo request/reply and RTTs
+
+Useful Display Filters
+- dns
+- http
+- tls
+- tcp
+- udp
+- icmp || icmpv6
+- ip.addr == <IP>
+- tcp.flags.syn == 1 && tcp.flags.ack == 0
+
+
